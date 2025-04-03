@@ -14,7 +14,6 @@ Example:
 
 import sys
 import hashlib
-# from hashlib import sha256
 
 def hash_email(email):
     """
@@ -29,10 +28,8 @@ def hash_email(email):
     # TODO: Implement this function
     # 1. Convert the email string to bytes
     email_byte = email.encode(encoding="utf-8")
-    print(type(email_byte))
     # 2. Create a SHA-256 hash of the email
     hashemail = hashlib.sha256(email_byte).hexdigest()
-    print(hashemail)
     # 3. Return the hash in hexadecimal format
     return(hashemail)
 
