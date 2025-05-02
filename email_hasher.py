@@ -62,6 +62,7 @@ def main():
         sys.exit(1)
     else:
         hash_value = hash_email(sys.argv[1])
+        print(hash_value)
     # 4. Write the hash to a file named "hash.email"
         if len(sys.argv) > 2:
             write_hash_to_file(hash_value, sys.argv[2])
